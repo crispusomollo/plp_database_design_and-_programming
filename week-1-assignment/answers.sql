@@ -1,4 +1,4 @@
---Part 2: 
+--Part 2: Creating a database
 
 --Create database named hospital_db.
 CREATE DATABASE hospital_db;
