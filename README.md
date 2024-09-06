@@ -1,2 +1,2 @@
-# plp_database_design_and-_programming
+# plp_database_design_and_programming
 Database Design &amp; Programming with SQL
