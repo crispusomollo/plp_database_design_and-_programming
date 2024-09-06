@@ -77,5 +77,3 @@ SELECT * FROM table_two;
 ## Bonus Challenge (optional)
 Write a query that lists all discharges where the patient was discharged home and the discharge date is within the first week of March 2018.
 
-<br/><br/>
-## NOTE: Do not fork this repository
