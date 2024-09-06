@@ -1,5 +1,10 @@
---Create the database
+--Part 2: 
+
+--Create database named hospital_db.
 CREATE DATABASE hospital_db;
+
+
+--Part 3: Creating Tables
 
 --Select the database
 USE hospital_db;
