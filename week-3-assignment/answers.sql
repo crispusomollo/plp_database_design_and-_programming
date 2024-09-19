@@ -11,3 +11,12 @@ FROM
     discharges;
 
 
+-- Part 2: Grouping Data
+
+-- question 2.1
+SELECT 
+    primary_diagnosis, COUNT(*) AS total_admissions
+FROM
+    admissions
+GROUP BY primary_diagnosis;
+
