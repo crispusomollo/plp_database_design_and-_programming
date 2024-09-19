@@ -44,3 +44,11 @@ FROM
     admissions
 GROUP BY service
 HAVING COUNT(*) > 5;
+
+-- question 3.2
+SELECT 
+    AVG(DATEDIFF(discharge_date, admission_date)) AS average_length_of_stay
+FROM
+    admissions, discharges
+WHERE
+    primary_diagnosis = 'Stroke';
