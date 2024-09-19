@@ -95,3 +95,17 @@ FROM
     admissions, discharges
 GROUP BY 
     primary_diagnosis;
+
+
+-- Bonus challenge
+
+SELECT 
+    service, 
+    COUNT(*) AS total_admissions,
+    AVG(DATEDIFF(discharge_date, admission_date)) AS average_length_of_stay
+FROM 
+    admissions, discharges
+GROUP BY 
+    service
+ORDER BY 
+    average_length_of_stay DESC;
