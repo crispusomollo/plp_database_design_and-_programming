@@ -27,3 +27,9 @@ FROM
     admissions, discharges
 GROUP BY service;
 
+-- question 2.3
+SELECT 
+    discharge_disposition, COUNT(*) AS total_discharges
+FROM
+    discharges
+GROUP BY discharge_disposition;
