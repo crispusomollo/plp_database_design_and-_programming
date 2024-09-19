@@ -55,3 +55,14 @@ FROM
     admissions, discharges
 WHERE
     primary_diagnosis = 'Stroke';
+
+
+-- Part 4: Advanced Grouping and Summarizing
+
+-- question 4.1
+SELECT 
+    acuity, COUNT(*) AS total_visits
+FROM
+    ed_visits
+GROUP BY acuity;
+
