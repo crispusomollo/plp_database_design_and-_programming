@@ -33,3 +33,14 @@ SELECT
 FROM
     discharges
 GROUP BY discharge_disposition;
+
+
+-- Part 3: Combining Aggregates and Filtering
+
+-- question 3.1
+SELECT 
+    service, COUNT(*) AS total_admissions
+FROM
+    admissions
+GROUP BY service
+HAVING COUNT(*) > 5;
