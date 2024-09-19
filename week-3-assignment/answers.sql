@@ -72,3 +72,26 @@ SELECT
 FROM
     admissions
 GROUP BY primary_diagnosis , service;
+
+
+-- Part 5: Practical Financial Analysis
+
+-- question 5.1
+SELECT 
+    DATE_FORMAT(admission_date, '%Y-%m') AS admission_month, 
+    COUNT(*) AS total_admissions
+FROM 
+    admissions
+GROUP BY 
+    DATE_FORMAT(admission_date, '%Y-%m')
+ORDER BY 
+    admission_month;
+
+-- question 5.2 
+SELECT 
+    primary_diagnosis, 
+    MAX(DATEDIFF(discharge_date, admission_date)) AS max_length_of_stay
+FROM 
+    admissions, discharges
+GROUP BY 
+    primary_diagnosis;
