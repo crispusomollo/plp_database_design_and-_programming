@@ -66,3 +66,9 @@ FROM
     ed_visits
 GROUP BY acuity;
 
+-- question 4.2
+SELECT 
+    primary_diagnosis, service, COUNT(*) AS total_admissions
+FROM
+    admissions
+GROUP BY primary_diagnosis , service;
