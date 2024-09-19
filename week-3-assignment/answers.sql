@@ -7,8 +7,7 @@ SELECT COUNT(*) AS total_admissions FROM admissions;
 SELECT 
     AVG(DATEDIFF(discharge_date, admission_date)) AS average_length_of_stay
 FROM
-    admissions,
-    discharges;
+    admissions, discharges;
 
 
 -- Part 2: Grouping Data
@@ -19,4 +18,12 @@ SELECT
 FROM
     admissions
 GROUP BY primary_diagnosis;
+
+-- question 2.2
+SELECT 
+    service,
+    AVG(DATEDIFF(discharge_date, admission_date)) AS average_length_of_stay
+FROM
+    admissions, discharges
+GROUP BY service;
 
