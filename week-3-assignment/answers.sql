@@ -1,6 +1,6 @@
 -- Part 1: Basic Aggregate Functions
 
 -- question 1.1
-select count(*) from admissions;
+SELECT COUNT(*) AS total_admissions FROM admissions;
 
--- 1.2
+-- question 1.2
