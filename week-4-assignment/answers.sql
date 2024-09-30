@@ -20,3 +20,10 @@ DELETE FROM patients
 WHERE patient_id = 10;
 
 
+-- Part 4: Handling NULL Values
+
+-- question 4.1
+SELECT 
+    first_name, last_name,
+    COALESCE(email_address, 'N/A') AS email_address
+FROM providers;
