@@ -11,3 +11,12 @@ VALUES ('John', 'Doe', '1980-11-15', 'Male', 'English');
 UPDATE patients
 SET language = 'Spanish'
 WHERE first_name = 'John' AND last_name = 'Doe';
+
+
+-- Part 3: DELETE Data
+
+-- question 3.1
+DELETE FROM patients
+WHERE patient_id = 10;
+
+
