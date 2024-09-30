@@ -33,3 +33,14 @@ SELECT first_name, last_name,
        COALESCE(phone_number, 'Missing details') AS phone_number,
        COALESCE(email_address, 'Missing details') AS email_address
 FROM providers;
+
+
+-- Bonus question
+SELECT 
+    first_name, last_name, phone_number, email_address
+FROM
+    providers
+WHERE
+    provider_specialty = 'Pediatrics'
+        AND (phone_number IS NULL
+        OR email_address IS NULL);
