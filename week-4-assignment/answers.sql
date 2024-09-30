@@ -27,3 +27,9 @@ SELECT
     first_name, last_name,
     COALESCE(email_address, 'N/A') AS email_address
 FROM providers;
+
+-- question 4.2
+SELECT first_name, last_name,
+       COALESCE(phone_number, 'Missing details') AS phone_number,
+       COALESCE(email_address, 'Missing details') AS email_address
+FROM providers;
